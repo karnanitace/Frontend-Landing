@@ -1,0 +1,89 @@
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#home {
+  background-image: linear-gradient(
+      rgba(19, 15, 15, 0.6),
+      rgba(19, 15, 15, 0.6)
+    ),
+    $hero-image;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 60px 0px;
+
+    nav .nav {
+      display: flex;
+      align-items: center;
+      height: 50px;
+
+      li {
+        list-style: none;
+        margin-right: 40px;
+
+        a:hover {
+          color: $primary-color;
+          @include easeInOut();
+        }
+      }
+    }
+  }
+
+  .hero-content {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+
+    .hero-info {
+      text-align: center;
+
+      h1 {
+        font-size: 80px;
+        font-weight: bold;
+        color: #fff;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.4;
+        color: #fff;
+        width: 600px;
+        margin: 20px 140px 50px;
+      }
+      a {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.btn-apply {
+  background: $secondary-color;
+  font-size: 16px;
+  padding: 16px 20px;
+  border-radius: 5px;
+
+  &:hover {
+    background: $primary-color;
+    @include easeInOut();
+  }
+}
