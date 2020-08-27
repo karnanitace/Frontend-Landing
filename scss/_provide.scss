@@ -1,0 +1,52 @@
+#provide {
+  background: #423633;
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      @include topic(#fff);
+      padding-top: 100px;
+    }
+
+    .provide-items {
+      margin: 60px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 4em;
+
+      & div {
+        cursor: pointer;
+        img {
+          float: left;
+        }
+        h3 {
+          font-size: 18px;
+          text-transform: uppercase;
+          color: #fff;
+          margin-bottom: 20px;
+          text-align: left;
+          margin-left: 70px;
+        }
+        p {
+          color: #fff;
+          opacity: 0.5;
+          font-size: 16px;
+          text-align: left;
+          margin-left: 70px;
+        }
+      }
+    }
+
+    .separator {
+      padding: 100px;
+
+      img {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+  }
+}

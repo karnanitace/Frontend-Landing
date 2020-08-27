@@ -25,55 +25,86 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 50px 60px 0px;
+    @include easeInOut();
 
-    nav .nav {
-      display: flex;
+    &.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      z-index: 1;
+      height: 100px;
       align-items: center;
-      height: 50px;
+      padding: 20px 60px;
+    }
 
-      li {
-        list-style: none;
-        margin-right: 40px;
+    nav {
+      .nav {
+        display: flex;
+        align-items: center;
+        height: 50px;
 
-        a:hover {
-          color: $primary-color;
-          @include easeInOut();
+        li {
+          list-style: none;
+          padding: 0 20px;
+
+          a {
+            color: #fff;
+
+            &:hover {
+              color: $primary-color;
+              @include easeInOut();
+            }
+          }
         }
+      }
+    }
+    .menu-toggle {
+      display: none;
+
+      .fa-bars {
+        color: #fff;
+        font-size: 28px;
+
+        cursor: pointer;
       }
     }
   }
 
   .hero-content {
-    display: flex;
-    min-height: 70vh;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    height: 100%;
 
-    .hero-info {
+    h2 {
+      font-size: 5em;
+      font-weight: bold;
+      color: #fff;
+      padding-top: 120px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.4;
+      color: #fff;
       text-align: center;
+      width: 45%;
+      transform: translateX(60%);
+      margin: 20px 0 50px;
+      opacity: 0.7;
+    }
+    a {
+      text-transform: uppercase;
+      color: #fff;
 
-      h1 {
-        font-size: 80px;
-        font-weight: bold;
-        color: #fff;
-      }
-      p {
-        font-size: 20px;
-        line-height: 1.4;
-        color: #fff;
-        width: 600px;
-        margin: 20px 140px 50px;
-      }
-      a {
-        text-transform: uppercase;
+      i {
+        margin-left: 5px;
       }
     }
   }
+}
 
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
+a {
+  text-decoration: none;
+  outline: none;
 }
 
 .btn-apply {
@@ -81,9 +112,16 @@ body {
   font-size: 16px;
   padding: 16px 20px;
   border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
 
   &:hover {
     background: $primary-color;
     @include easeInOut();
   }
 }
+@import "about";
+@import "food";
+@import "provide";
+@import "footer";
+@import "mobile";

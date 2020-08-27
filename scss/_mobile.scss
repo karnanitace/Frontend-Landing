@@ -1,0 +1,105 @@
+//Tablets and Small Laptops
+@include mediaMd {
+  #home {
+    header {
+      nav {
+        // display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 100px;
+        background: #333;
+        z-index: 1;
+        transition: 0.5s;
+
+        .nav {
+          display: block;
+          text-align: center;
+          height: 100%;
+
+          li {
+            line-height: 50px;
+            border-bottom: 1px solid #9b9b9b1e;
+            cursor: pointer;
+
+            &:hover {
+              background: $primary-color;
+            }
+            a:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+    .active {
+      left: 0;
+    }
+  }
+
+  #about {
+    .quality-item {
+      & div {
+        width: 100%;
+        float: none;
+      }
+    }
+
+    .about-info {
+      grid-template-columns: 1fr;
+
+      .resources {
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          width: 80%;
+          left: 0;
+          top: 110%;
+        }
+      }
+      .latest {
+        padding-left: 0;
+      }
+    }
+  }
+
+  #provide {
+    .container {
+      .provide-items {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  #home {
+    .hero-content {
+      h2 {
+        padding-top: 40px;
+        font-size: 3em;
+      }
+      p {
+        transform: translateX(0);
+        width: 100%;
+      }
+    }
+  }
+  #provide {
+    .container {
+      .provide-items {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  #food {
+    .food-items {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
