@@ -7,6 +7,8 @@
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Font awesome
     <link
       rel="stylesheet"
@@ -23,17 +25,21 @@
         <div class="logo">
           <img src="img/logo-frontend-ninja.png" alt="logo" />
         </div>
+        <form>
+          <input type="text" id="search" placeholder="Search..." />
+          <!-- <a href="#!" class="search-icon"><i class="far fa-search"></i></a> -->
+          <a href="#!" class="close-icon"><i class="far fa-times"></i></a>
+        </form>
         <nav>
           <ul class="nav">
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">About</a></li>
-            <li><a href="#!">Work</a></li>
-            <li><a href="#!">Contact</a></li>
-            <li>
-              <a href="#!"><i class="far fa-search"></i></a>
-            </li>
+            <li><a href="#home" class="item">Home</a></li>
+            <li><a href="#about" class="item">About</a></li>
+            <li><a href="#food" class="item">Work</a></li>
+            <li><a href="#!" class="item">Contact</a></li>
+            <a href="#!" class="search-icon"><i class="far fa-search"></i></a>
           </ul>
         </nav>
+
         <div class="menu-toggle"><i class="far fa-bars"></i></div>
       </header>
       <div class="hero-content">
@@ -55,7 +61,7 @@
       <div class="container">
         <div class="quality-item">
           <h2>What you should have</h2>
-          <div>
+          <div data-aos="fade-right" data-aos-duration="2000">
             <img src="img/img-requirements-3.png" alt="" />
             <h3>Attention to detail</h3>
             <p>
@@ -64,7 +70,7 @@
               design.
             </p>
           </div>
-          <div>
+          <div data-aos="fade-down" data-aos-duration="2000">
             <img src="img/img-requirements-2.png" alt="" />
             <h3>Frontend tech knowledge</h3>
             <p>
@@ -73,7 +79,7 @@
               language.
             </p>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="2000">
             <img src="img/img-requirements-1.png" alt="" />
             <h3>Love for technology</h3>
             <p>
@@ -87,13 +93,13 @@
           <div class="resources">
             <h2>Resources</h2>
             <ul>
-              <li>
+              <li data-aos="fade-right" data-aos-duration="800">
                 <i class="fal fa-globe"></i><a href="#!">Designer News</a>
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-duration="1200">
                 <i class="fal fa-globe"></i><a href="#!">Smashing Magazine</a>
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-duration="1400">
                 <i class="fal fa-globe"></i><a href="#!">Frontend Front</a>
               </li>
             </ul>
@@ -103,17 +109,17 @@
             <h2>Latest from frontend</h2>
 
             <ul>
-              <li>
+              <li data-aos="fade-right" data-aos-duration="800">
                 <a href="#!"
                   >JavaScript Performance Optimization Tips: An Overview</a
                 >
                 <p class="time-stamp">12 HOURS AGO</p>
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-duration="1200">
                 <a href="#!">Designing a dashboard for Concourse</a>
                 <p class="time-stamp">20 NOVEMBER, 2017</p>
               </li>
-              <li>
+              <li data-aos="fade-right" data-aos-duration="1400">
                 <a href="#!"
                   >JSRobot – Learn to code in JavaScript by playing a game</a
                 >
@@ -140,21 +146,27 @@
       <div class="food-items">
         <div>
           <img src="img/food-photos-1.png" alt="" />
+          <i class="fal fa-heart"></i>
         </div>
         <div>
           <img src="img/food-photos-2.png" alt="" />
+          <i class="fal fa-heart"></i>
         </div>
         <div>
           <img src="img/food-photos-3.png" alt="" />
+          <i class="fal fa-heart"></i>
         </div>
         <div>
           <img src="img/food-photos-4.png" alt="" />
+          <i class="fal fa-heart"></i>
         </div>
         <div>
           <img src="img/food-photos-5.png" alt="" />
+          <i class="fal fa-heart"></i>
         </div>
         <div>
           <img src="img/food-photos-6.png" alt="" />
+          <i class="fal fa-heart"></i>
         </div>
       </div>
     </section>
@@ -269,6 +281,7 @@
       </div>
     </section>
     <script src="js/fontAwesome.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

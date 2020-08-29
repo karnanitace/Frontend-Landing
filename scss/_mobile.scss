@@ -2,6 +2,16 @@
 @include mediaMd {
   #home {
     header {
+      padding: 50px 10px 0;
+
+      &.sticky {
+        padding: 20px 20px;
+      }
+      form {
+        input {
+          width: 250px;
+        }
+      }
       nav {
         // display: none;
         position: absolute;
@@ -17,6 +27,7 @@
           display: block;
           text-align: center;
           height: 100%;
+          margin-right: 0;
 
           li {
             line-height: 50px;
@@ -30,6 +41,11 @@
               color: #fff;
             }
           }
+          .search-icon {
+            .svg-inline--fa {
+              margin-top: 20px;
+            }
+          }
         }
       }
       .menu-toggle {
@@ -38,6 +54,11 @@
     }
     .active {
       left: 0;
+    }
+    .hero-content {
+      h2 {
+        padding-top: 20px;
+      }
     }
   }
 
@@ -79,6 +100,20 @@
 
 @include mediaSm {
   #home {
+    header {
+      .logo {
+        img {
+          width: 75%;
+        }
+      }
+      form {
+        input {
+          width: 150px;
+          padding: 5px 10px;
+        }
+      }
+    }
+
     .hero-content {
       h2 {
         padding-top: 40px;
@@ -101,5 +136,8 @@
     .food-items {
       grid-template-columns: 1fr 1fr;
     }
+  }
+  #footer {
+    justify-content: center;
   }
 }

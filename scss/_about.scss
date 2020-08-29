@@ -15,6 +15,7 @@
 
     img {
       width: 100%;
+      @include easeInOut();
     }
 
     & div {
@@ -22,6 +23,13 @@
       float: left;
       padding: 50px 50px;
       cursor: pointer;
+
+      &:hover {
+        img {
+          opacity: 0.5;
+          @include easeInOut();
+        }
+      }
 
       h3 {
         font-size: 18px;
@@ -100,6 +108,10 @@
       .view {
         color: $secondary-color;
         font-size: 16px;
+
+        &:hover {
+          color: $primary-color;
+        }
       }
     }
     .latest {
@@ -119,6 +131,12 @@
 
     img {
       margin: 0 20px;
+      transition: transform 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        @include rotate();
+      }
     }
 
     .line {

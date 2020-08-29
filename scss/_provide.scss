@@ -19,8 +19,26 @@
 
       & div {
         cursor: pointer;
+
+        &:hover {
+          & img {
+            transform: scale(0.8);
+            @include easeInOut();
+          }
+          & h3 {
+            color: $secondary-color;
+            @include easeInOut();
+          }
+
+          & p {
+            opacity: 1;
+            @include easeInOut();
+          }
+        }
+
         img {
           float: left;
+          @include easeInOut();
         }
         h3 {
           font-size: 18px;
@@ -39,13 +57,18 @@
         }
       }
     }
+  }
 
-    .separator {
-      padding: 100px;
+  .separator {
+    padding: 100px;
 
-      img {
-        opacity: 0.5;
-        cursor: pointer;
+    img {
+      opacity: 0.5;
+      transition: transform 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        @include rotate();
       }
     }
   }
