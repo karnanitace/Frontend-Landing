@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", sans-serif; }
 
 #home {
-  background-image: linear-gradient(rgba(19, 15, 15, 0.6), rgba(19, 15, 15, 0.6)), url(../img/hero.png);
+  background-image: linear-gradient(rgba(19, 17, 17, 0.747), rgba(19, 15, 15, 0.747)), url(../img/hero.png);
   background-size: cover;
   background-position: center;
   min-height: 100vh; }
@@ -53,7 +53,7 @@ body {
         width: 300px;
         padding: 10px 12px;
         outline: 0;
-        border: 2px solid #70c919;
+        border: 1px solid #70c919;
         background: #020202;
         color: #fff;
         transform: scaleX(0);
@@ -134,14 +134,14 @@ a {
   #about .quality-item img {
     width: 100%;
     transition: all 0.3s ease-in-out; }
+    #about .quality-item img:hover {
+      opacity: 0.5;
+      transition: all 0.3s ease-in-out; }
   #about .quality-item div {
     width: 33.33%;
     float: left;
     padding: 50px 50px;
     cursor: pointer; }
-    #about .quality-item div:hover img {
-      opacity: 0.5;
-      transition: all 0.3s ease-in-out; }
     #about .quality-item div h3 {
       font-size: 18px;
       font-weight: bold;

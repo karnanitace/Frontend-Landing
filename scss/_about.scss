@@ -16,6 +16,11 @@
     img {
       width: 100%;
       @include easeInOut();
+
+      &:hover {
+        opacity: 0.5;
+        @include easeInOut();
+      }
     }
 
     & div {
@@ -23,13 +28,6 @@
       float: left;
       padding: 50px 50px;
       cursor: pointer;
-
-      &:hover {
-        img {
-          opacity: 0.5;
-          @include easeInOut();
-        }
-      }
 
       h3 {
         font-size: 18px;

@@ -13,8 +13,8 @@ body {
 
 #home {
   background-image: linear-gradient(
-      rgba(19, 15, 15, 0.6),
-      rgba(19, 15, 15, 0.6)
+      rgba(19, 17, 17, 0.747),
+      rgba(19, 15, 15, 0.747)
     ),
     $hero-image;
   background-size: cover;
@@ -79,7 +79,7 @@ body {
         padding: 10px 12px;
         outline: 0;
 
-        border: 2px solid $primary-color;
+        border: 1px solid $primary-color;
 
         background: rgb(2, 2, 2);
         color: #fff;
