@@ -1,0 +1,19 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karnanitace/Frontend-Landing.git"
+  },
+  "author": "Nitesh Karna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karnanitace/Frontend-Landing/issues"
+  },
+  "homepage": "https://github.com/karnanitace/Frontend-Landing#readme"
+}
